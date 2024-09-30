@@ -21,7 +21,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url(/public/bg.jpg); /* Changed background color */
+  background-image: url(/public/bg.jpg); 
   background-size: cover;
   padding: 10px; 
   backdrop-filter: blur(10px); /* Frosted glass effect */

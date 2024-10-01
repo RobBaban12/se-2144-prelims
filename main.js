@@ -60,11 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Event listeners for the new buttons
   document.getElementById('hello').addEventListener('click', showRandomHello);
   document.getElementById('bye').addEventListener('click', toggleCalculator);
 
-  // Expose functions to global scope for inline onclick attributes
   window.appendToDisplay = appendToDisplay;
   window.clearDisplay = clearDisplay;
   window.calculate = calculate;

@@ -4,17 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const display = document.getElementById('display');
 
     if (calculator.classList.contains('off')) {
-      calculator.classList.remove('off');
-      display.value = 'Hello 🌎';
+      calculator.classList.remove('off');      
       setTimeout(() => {
         display.value = '';
-      }, 1500); // Clear display after 1.5 seconds
+      }, 1500); 
     } else {
       calculator.classList.add('off');
       display.value = 'Goodbye 👋';
       setTimeout(() => {
         display.value = '';
-      }, 1500); // Clear display after 1.5 seconds
+      }, 1500); 
     }
   }
 
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     display.value = randomGreeting;
     setTimeout(() => {
       display.value = '';
-    }, 1500); // Clear display after 1.5 seconds
+    }, 1500); 
   }
 
   const appendToDisplay = (value) => {
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!document.getElementById('calculator')?.classList.contains('off')) {
       display.value += value;
     } else {
-      alert('Calculator is off');
+      display.value = 'Calculator is off';
     }
   }
 

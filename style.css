@@ -1,4 +1,4 @@
-
+/* Responsive design for small screens */
 @media (max-width: 400px) {
   #display {
     font-size: 2em; 
@@ -15,6 +15,7 @@
   }
 }
 
+/* General body styling */
 body {
   display: flex;
   justify-content: center;
@@ -27,35 +28,39 @@ body {
   backdrop-filter: blur(10px); 
 }
 
+/* Calculator container styling */
 #calculator {
   background: rgba(255, 255, 255, 0.2); /* Transparent background */
-  border-radius: 30px; /* Increased border radius for rounded corners */
+  border-radius: 30px; /* Rounded corners */
   padding: 20px;
-  box-shadow: 0 10px 15px rgb(163, 84, 163); /* Added box shadow */
+  box-shadow: 0 10px 15px rgb(163, 84, 163); /* Box shadow */
   width: 100%;
-  max-width: 300px; /* Ensure it doesn't exceed 300px */
+  max-width: 300px; /* Max width */
 }
 
+/* Display styling */
 #display {
   width: 100%;
   height: 80px; /* Increased height for better visibility */
-   background: rgba(97, 97, 97, 0.2); 
-  color: #ffffff; /* Changed text color */
+  background: rgba(97, 97, 97, 0.2); 
+  color: #ffffff; /* Text color */
   font-size: 2.5em;
   text-align: right;
   border: none;
-  border-radius: 20px; /* Increased border radius for rounded corners */
+  border-radius: 20px; /* Rounded corners */
   margin-bottom: 20px; 
   padding: 10px;
   box-sizing: border-box; 
 }
 
+/* Key container styling */
 #keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
+/* General key styling */
 .key {
   background: rgba(42, 28, 28, 0.2); 
   color: #ffffff;
@@ -67,6 +72,7 @@ body {
   transition: background 0.3s;
 }
 
+/* Key hover and active states */
 .key:hover {
   background: #6e6e6e;
 }
@@ -75,25 +81,22 @@ body {
   background: #8e8e8e;
 }
 
+/* Special key styling */
 .key:nth-child(4),
 .key:nth-child(8),
 .key:nth-child(12),
-.key:nth-child(16)
- {
+.key:nth-child(16) {
   background: #2ab7b7;
 }
 
 .key:nth-child(18),
 .key:nth-child(17),
 .key:nth-child(19),
-.key:nth-child(20)
+.key:nth-child(20) {
+  background: #ff6b6b;
+}
 
-
-
-
-  {
-    background: #ff6b6b;
-  }
+/* On/Off button styling */
 #on-off {
   background: #ff6b6b;
   grid-column: span 2;
@@ -105,6 +108,7 @@ body {
   border-radius: 10px;
 }
 
+/* Hello and Bye button styling */
 #hello, #bye {
   color: #ffffff;
   font-size: 15px;
@@ -117,6 +121,7 @@ body {
   grid-column: span 1; 
 }
 
+/* Hello and Bye button hover and active states */
 #hello:hover, #bye:hover {
   background: #ff4b4b;
 }

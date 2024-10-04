@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Function to toggle the calculator on and off
   const toggleCalculator = () => {
     const calculator = document.getElementById('calculator');
     const display = document.getElementById('display');
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Function to show a random greeting message
   const showRandomHello = () => {
     const display = document.getElementById('display');
     const greetings = ['Hello 🌎', 'Hola 🌎', 'Kamusta 🌎', 'Bonjour 🌎', 'Hallo 🌎'];
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1500); 
   }
 
+  // Function to append a value to the display
   const appendToDisplay = (value) => {
     const display = document.getElementById('display');
     if (!document.getElementById('calculator')?.classList.contains('off')) {
@@ -36,11 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Function to clear the display
   const clearDisplay = () => {
     const display = document.getElementById('display');
     display.value = '';
   }
 
+  // Function to evaluate the expression in the display
   const calculate = () => {
     const display = document.getElementById('display');
     try {
@@ -50,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Function to remove the last character from the display
   const backspace = () => {
     const display = document.getElementById('display');
     if (!document.getElementById('calculator')?.classList.contains('off')) {
@@ -59,11 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Event listeners for the Hello and Bye buttons
   document.getElementById('hello').addEventListener('click', showRandomHello);
   document.getElementById('bye').addEventListener('click', toggleCalculator);
 
+  //  functions to the global scope for button onclick attributes
   window.appendToDisplay = appendToDisplay;
   window.clearDisplay = clearDisplay;
   window.calculate = calculate;
   window.backspace = backspace;
 });
+

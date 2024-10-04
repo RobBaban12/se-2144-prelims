@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- Calculator Container -->
     <div id="calculator" class="off">
+      <!-- Display for showing input and results -->
       <input type="text" id="display" readonly>
+      <!-- Container for calculator keys -->
       <div id="keys">
+        <!-- Number and operation keys -->
         <button class="key" onclick="appendToDisplay('7')">7</button>
         <button class="key" onclick="appendToDisplay('8')">8</button>
         <button class="key" onclick="appendToDisplay('9')">9</button>
@@ -28,11 +32,13 @@
         <button class="key" onclick="appendToDisplay('-')">-</button>
         <button class="key" onclick="appendToDisplay('+')">+</button>
         <button class="key" onclick="backspace()">Del</button> 
+        <!-- Buttons for toggling calculator state and showing random greeting -->
         <button id="bye" class="key">Bye👋</button>
         <button id="hello" class="key">Hello🌎</button>
         <button class="key" onclick="calculate()">=</button>
       </div>
     </div>
+    <!-- Main JavaScript file -->
     <script type="module" src="main.js" defer></script>
   </body>
 </html>
